@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O97-Wd-hrm">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tabbar View Controller-->
+        <scene sceneID="Kp8-Et-koa">
+            <objects>
+                <viewController id="O97-Wd-hrm" customClass="TabbarViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o30-Nh-4hA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSo-W1-5x9">
+                                <rect key="frame" x="0.0" y="862" width="414" height="0.0"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GE5-2c-ekk">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="dark_bg"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="GE5-2c-ekk" secondAttribute="bottom" id="9cR-ZQ-2FV"/>
+                                    <constraint firstItem="GE5-2c-ekk" firstAttribute="leading" secondItem="HSo-W1-5x9" secondAttribute="leading" id="bGA-dA-gZC"/>
+                                    <constraint firstItem="GE5-2c-ekk" firstAttribute="top" secondItem="HSo-W1-5x9" secondAttribute="top" id="chR-qs-9fP"/>
+                                    <constraint firstAttribute="trailing" secondItem="GE5-2c-ekk" secondAttribute="trailing" id="gt7-ud-6dY"/>
+                                    <constraint firstAttribute="height" id="m1M-Qp-UHK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guO-T3-Nt0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YAl-PM-E4D"/>
+                        <color key="backgroundColor" name="dark_bg"/>
+                        <constraints>
+                            <constraint firstItem="YAl-PM-E4D" firstAttribute="trailing" secondItem="guO-T3-Nt0" secondAttribute="trailing" id="745-LV-lrD"/>
+                            <constraint firstItem="guO-T3-Nt0" firstAttribute="top" secondItem="o30-Nh-4hA" secondAttribute="top" id="Bh0-do-P2C"/>
+                            <constraint firstItem="HSo-W1-5x9" firstAttribute="bottom" secondItem="YAl-PM-E4D" secondAttribute="bottom" id="bne-JF-egb"/>
+                            <constraint firstItem="HSo-W1-5x9" firstAttribute="top" secondItem="guO-T3-Nt0" secondAttribute="bottom" id="tKM-0L-25g"/>
+                            <constraint firstItem="HSo-W1-5x9" firstAttribute="leading" secondItem="YAl-PM-E4D" secondAttribute="leading" id="tt9-aV-xri"/>
+                            <constraint firstItem="guO-T3-Nt0" firstAttribute="leading" secondItem="YAl-PM-E4D" secondAttribute="leading" id="xtI-Z0-sc3"/>
+                            <constraint firstItem="YAl-PM-E4D" firstAttribute="trailing" secondItem="HSo-W1-5x9" secondAttribute="trailing" id="zFC-TR-SFD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="guO-T3-Nt0" id="ZXh-uq-Tf9"/>
+                        <outlet property="tabbarStackView" destination="GE5-2c-ekk" id="dxa-4U-cJM"/>
+                        <outlet property="tabbarView" destination="HSo-W1-5x9" id="ARr-00-un3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SJT-AN-cXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-68" y="72.413793103448285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="dark_bg">
+            <color red="0.078000001609325409" green="0.078000001609325409" blue="0.086000002920627594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

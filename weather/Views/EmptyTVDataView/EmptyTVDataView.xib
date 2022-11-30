@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmptyTVDataView" customModule="Weather" customModuleProvider="target">
+            <connections>
+                <outlet property="image" destination="Tmh-3e-SlX" id="WbR-pT-ua2"/>
+                <outlet property="titleLabel" destination="eHM-SP-JQa" id="bcz-Fq-3v2"/>
+                <outlet property="xibLoadedContentView" destination="d6X-il-CsL" id="c0d-Jd-vBs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="d6X-il-CsL">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tmh-3e-SlX">
+                    <rect key="frame" x="0.0" y="296.5" width="375" height="219"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Tmh-3e-SlX" secondAttribute="height" multiplier="223:130" id="JSf-vv-NEu"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHM-SP-JQa">
+                    <rect key="frame" x="20" y="25" width="335" height="0.0"/>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="16"/>
+                    <color key="textColor" name="white"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Tmh-3e-SlX" secondAttribute="trailing" id="EQV-4h-8iY"/>
+                <constraint firstItem="eHM-SP-JQa" firstAttribute="top" secondItem="d6X-il-CsL" secondAttribute="top" constant="25" id="HkW-Ou-evD"/>
+                <constraint firstItem="Tmh-3e-SlX" firstAttribute="leading" secondItem="d6X-il-CsL" secondAttribute="leading" id="L5r-CP-F6e"/>
+                <constraint firstItem="eHM-SP-JQa" firstAttribute="leading" secondItem="d6X-il-CsL" secondAttribute="leading" constant="20" id="T1H-02-VNv"/>
+                <constraint firstAttribute="trailing" secondItem="eHM-SP-JQa" secondAttribute="trailing" constant="20" id="dfz-9A-K99"/>
+                <constraint firstItem="Tmh-3e-SlX" firstAttribute="centerY" secondItem="d6X-il-CsL" secondAttribute="centerY" id="mRL-4n-dYg"/>
+                <constraint firstItem="Tmh-3e-SlX" firstAttribute="centerX" secondItem="d6X-il-CsL" secondAttribute="centerX" id="nSr-10-AXP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="197.87946428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

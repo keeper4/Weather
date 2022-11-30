@@ -1,0 +1,37 @@
+/*
+  Localizable.strings
+  Weather
+
+  Created by Oleksandr Chyzh on 30.11.2022.
+  Copyright © 2022 Oleksandr Chyzh. All rights reserved.
+*/
+
+// NetworkError
+"NetworkError.unknown" = "There was an error. Please, try again…";
+"NetworkError.timeOut" = "Response timeout";
+"NetworkError.noConnection" = "No internet connection";
+"NetworkError.noResponse" = "No response";
+"NetworkError.cantParseModel" = "Can't parse Base Model";
+"NetworkError.invalidUrl" = "invalidUrl";
+
+"NetworkError.invalidAccessKey" = "User supplied an invalid access key.";
+"NetworkError.inactive_user" = "User account is inactive or blocked.";
+"NetworkError.invalid_api_function" = "User requested a non-existent API function.";
+"NetworkError.usage_limit_reached" = "User has reached his subscription's monthly request allowance.";
+
+"NetworkError.notFound" = "User requested a resource which does not exist.";
+"NetworkError.badRequest" = "Bad Request";
+"NetworkError.internalServerError" = "Internal Server Error";;
+
+// BaseViewController
+"BaseViewController.OperationFailed" = "Error";
+"BaseViewController.Retry" = "Retry";
+"BaseViewController.Cancel" = "Cancel";
+"BaseViewController.Ok" = "Ok";
+
+"SearchViewModel.Search" = "Select City";
+
+"CurrentViewViewModel.temperature" = "Temperature";
+"CurrentViewViewModel.windSpeed" = "windSpeed";
+"CurrentViewViewModel.windDir" = "windDir";
+"CurrentViewViewModel.humidity" = "humidity";

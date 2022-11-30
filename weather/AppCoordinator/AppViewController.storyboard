@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Avf-al-bMu">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--App View Controller-->
+        <scene sceneID="Rfm-FB-DmU">
+            <objects>
+                <viewController id="Avf-al-bMu" customClass="AppViewController" customModule="Manzanita" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q9E-MS-Fky">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I3K-8E-d4M">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z5N-Qe-vYP">
+                                <rect key="frame" x="126.5" y="301.5" width="122" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="Q2B-k2-VYV"/>
+                                    <constraint firstAttribute="height" constant="64" id="QSf-5R-atR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AyT-9y-3fs"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I3K-8E-d4M" firstAttribute="leading" secondItem="AyT-9y-3fs" secondAttribute="leading" id="CIn-3e-pRy"/>
+                            <constraint firstAttribute="bottom" secondItem="I3K-8E-d4M" secondAttribute="bottom" id="L7W-xE-G62"/>
+                            <constraint firstItem="I3K-8E-d4M" firstAttribute="top" secondItem="q9E-MS-Fky" secondAttribute="top" id="PDH-RE-toW"/>
+                            <constraint firstItem="Z5N-Qe-vYP" firstAttribute="centerY" secondItem="q9E-MS-Fky" secondAttribute="centerY" id="h42-17-uyF"/>
+                            <constraint firstItem="Z5N-Qe-vYP" firstAttribute="centerX" secondItem="q9E-MS-Fky" secondAttribute="centerX" id="tur-Wj-6NZ"/>
+                            <constraint firstItem="AyT-9y-3fs" firstAttribute="trailing" secondItem="I3K-8E-d4M" secondAttribute="trailing" id="wOy-O3-bes"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationContainerView" destination="Z5N-Qe-vYP" id="dud-6V-AZb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gnL-X8-SBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="374.33035714285711"/>
+        </scene>
+    </scenes>
+</document>

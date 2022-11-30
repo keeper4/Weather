@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabbarItemAddView" customModule="Manzanita" customModuleProvider="target">
+            <connections>
+                <outlet property="tabbarButton" destination="WKp-c6-QOG" id="dvf-IZ-5Pa"/>
+                <outlet property="tabbarItemImageView" destination="VT6-2b-iyT" id="moV-i4-cek"/>
+                <outlet property="xibLoadedContentView" destination="iN0-l3-epB" id="wBm-B3-Y4S"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="116" height="76"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FAB_Button" translatesAutoresizingMaskIntoConstraints="NO" id="VT6-2b-iyT">
+                    <rect key="frame" x="22" y="4" width="72" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="4XP-0T-tU6"/>
+                        <constraint firstAttribute="width" constant="72" id="aOC-LU-3hA"/>
+                    </constraints>
+                </imageView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKp-c6-QOG">
+                    <rect key="frame" x="0.0" y="0.0" width="116" height="76"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="VT6-2b-iyT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7Jq-Za-SiK"/>
+                <constraint firstItem="WKp-c6-QOG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Bsd-as-2tH"/>
+                <constraint firstItem="WKp-c6-QOG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Guh-v6-5ds"/>
+                <constraint firstAttribute="trailing" secondItem="WKp-c6-QOG" secondAttribute="trailing" id="N7G-NV-zVz"/>
+                <constraint firstAttribute="bottom" secondItem="VT6-2b-iyT" secondAttribute="bottom" id="iBH-9l-XwJ"/>
+                <constraint firstAttribute="bottom" secondItem="WKp-c6-QOG" secondAttribute="bottom" id="ju4-Oz-q2J"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-104" y="257.27136431784112"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FAB_Button" width="72" height="72"/>
+    </resources>
+</document>
