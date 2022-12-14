@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 
 class CurrentModel: BaseModel, MappableToRealm {
-    
+
    typealias RealmStoredObject = CurrentStoredObject
     
     private(set) var observationTime:       String!
@@ -26,7 +26,7 @@ class CurrentModel: BaseModel, MappableToRealm {
         }
     }
     
-    required init?(map: Map) {
+    required init?(map: ObjectMapper.Map) {
         guard
             map.JSON["observation_time"]   != nil,
             map.JSON["temperature"]   != nil,
@@ -39,7 +39,7 @@ class CurrentModel: BaseModel, MappableToRealm {
         super.init(map: map)
     }
     
-    override func mapping(map: Map) {
+    override func mapping(map: ObjectMapper.Map) {
         super.mapping(map: map)
         
         self.observationTime         <- map["observation_time"]

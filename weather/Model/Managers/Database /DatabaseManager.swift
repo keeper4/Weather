@@ -31,16 +31,18 @@ extension DatabaseManager {
     func save<T: MappableToRealm>(_ model: T) {
         try? self.realm.writeOpeningTransactionIfNeeded { [weak self] in
             guard let self = self else { return }
-            
-            switch model {
-                
-            case is ResponsWeatherModel:
-
-                self.realm.add(model.toRealmStoredObject(),
-                               update: ResponsWeatherStoredObject.primaryKey() != nil ? .all : .error)
-
-            default: fatalError("DatabaseManager save default no logic")
-            }
+            model.save(realm: self.realm)
+//            guard let self = self else { return }
+//
+//            switch model {
+//
+//            case is ResponsWeatherModel:
+//
+//                self.realm.add(model.toRealmStoredObject(),
+//                               update: ResponsWeatherStoredObject.primaryKey() != nil ? .all : .error)
+//
+//            default: fatalError("DatabaseManager save default no logic")
+//            }
         }
     }
     

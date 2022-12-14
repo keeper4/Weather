@@ -16,7 +16,7 @@ class ResponsWeatherModel: BaseModel, MappableToRealm {
     private(set) var location: LocationModel!
     private(set) var current: CurrentModel!
     
-    required init?(map: Map) {
+    required init?(map: ObjectMapper.Map) {
         guard
             map.JSON["location"]   != nil,
             map.JSON["current"]   != nil
@@ -25,7 +25,7 @@ class ResponsWeatherModel: BaseModel, MappableToRealm {
         super.init(map: map)
     }
     
-    override func mapping(map: Map) {
+    override func mapping(map: ObjectMapper.Map) {
         super.mapping(map: map)
         
         self.location <- map["location"]

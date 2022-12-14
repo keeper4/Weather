@@ -21,4 +21,9 @@ extension MappableToRealm where Self: BaseMappable {
         let json = self.toJSON()
         return RealmStoredObject(JSON: json)!
     }
+    
+    func save(realm: Realm) {
+        realm.add(toRealmStoredObject(),
+                  update: RealmStoredObject.primaryKey() != nil ? .all : .error)
+    }
 }

@@ -16,7 +16,7 @@ class LocationModel: BaseModel, MappableToRealm {
     private(set) var name:                String!
     private(set) var country:             String!
     
-    required init?(map: Map) {
+    required init?(map: ObjectMapper.Map) {
         guard
             map.JSON["name"]   != nil,
             map.JSON["country"]   != nil
@@ -25,7 +25,7 @@ class LocationModel: BaseModel, MappableToRealm {
         super.init(map: map)
     }
     
-    override func mapping(map: Map) {
+    override func mapping(map: ObjectMapper.Map) {
         super.mapping(map: map)
         
         self.name                <- map["name"]
