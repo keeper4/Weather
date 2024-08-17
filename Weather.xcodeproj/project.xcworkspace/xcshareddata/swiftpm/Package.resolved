@@ -1,4 +1,5 @@
 {
+  "originHash" : "04ca747719b796cc671d68967d4ba29ea58187f9370c63adbf129cee012a6aab",
   "pins" : [
     {
       "identity" : "iqkeyboardmanager",
@@ -14,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/onevcat/Kingfisher.git",
       "state" : {
-        "revision" : "44e891bdb61426a95e31492a67c7c0dfad1f87c5",
-        "version" : "7.4.1"
+        "revision" : "2ef543ee21d63734e1c004ad6c870255e8716c50",
+        "version" : "7.12.0"
       }
     },
     {
@@ -23,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tristanhimmelman/ObjectMapper.git",
       "state" : {
-        "revision" : "0b96a734de3ea1c87374ae677064f86adb0716ec",
-        "version" : "4.2.0"
+        "revision" : "6021c6035e83a306047348666f6400dc61445d3b",
+        "version" : "4.4.3"
       }
     },
     {
@@ -32,8 +33,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/realm/realm-cocoa.git",
       "state" : {
-        "revision" : "72a0dd9dc0ec1bab417155471191ef68e1bb0eaf",
-        "version" : "10.32.3"
+        "revision" : "0a97dda4dd0b77449e55b997cf636651e6187634",
+        "version" : "10.49.0"
       }
     },
     {
@@ -41,8 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/realm/realm-core",
       "state" : {
-        "revision" : "3c4b86da569368c4ee5ccca2a112d511cc6fa936",
-        "version" : "12.11.0"
+        "revision" : "e55176982ed9154899a39693d24609645b81586b",
+        "version" : "14.3.0"
       }
     },
     {
@@ -59,10 +60,10 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ReactiveX/RxSwift.git",
       "state" : {
-        "revision" : "b4307ba0b6425c0ba4178e138799946c3da594f8",
-        "version" : "6.5.0"
+        "revision" : "b06a8c8596e4c3e8e7788e08e720e3248563ce6a",
+        "version" : "6.7.1"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

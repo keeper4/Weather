@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,7 +23,6 @@
 		1D3DCFCD28C0A11B008A73A7 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3DCFCC28C0A11B008A73A7 /* SearchViewModel.swift */; };
 		1D3DCFCF28C0A125008A73A7 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3DCFCE28C0A125008A73A7 /* SearchController.swift */; };
 		1D3DCFD128C0A12A008A73A7 /* SearchController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3DCFD028C0A12A008A73A7 /* SearchController.storyboard */; };
-		1D6D9D2129377F5A00FF6AEF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D6D9D2329377F5A00FF6AEF /* Localizable.strings */; };
 		1D722E2726C3A60C005B17BE /* TabbarItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D722E2426C3A60C005B17BE /* TabbarItemViewModel.swift */; };
 		1D722E2826C3A60C005B17BE /* TabbarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D722E2526C3A60C005B17BE /* TabbarItemView.swift */; };
 		1D7299A926A556F200396ADA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1D7299A826A556F200396ADA /* Kingfisher */; };
@@ -141,6 +140,7 @@
 		A47D3A5B231E35B800C7B176 /* AppViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A418A3D122B7764500AE3E41 /* AppViewController.storyboard */; };
 		A47D3A7A231E35B800C7B176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4065F133221C2526009D179B /* Assets.xcassets */; };
 		A47D3A7C231E35B800C7B176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3BD85D9221127F2007F6B6D /* LaunchScreen.storyboard */; };
+		DE5FF3372C70DCDB00C2AB4F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DE5FF3362C70DCDB00C2AB4F /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -170,7 +170,6 @@
 		1D3DCFCC28C0A11B008A73A7 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		1D3DCFCE28C0A125008A73A7 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		1D3DCFD028C0A12A008A73A7 /* SearchController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchController.storyboard; sourceTree = "<group>"; };
-		1D6D9D2229377F5A00FF6AEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1D722E2426C3A60C005B17BE /* TabbarItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarItemViewModel.swift; sourceTree = "<group>"; };
 		1D722E2526C3A60C005B17BE /* TabbarItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarItemView.swift; sourceTree = "<group>"; };
 		1D7538F929361E2A0089144A /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
@@ -279,6 +278,7 @@
 		D3242E4A222F7C4B00E2F45F /* ObservableType+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Extensions.swift"; sourceTree = "<group>"; };
 		D3242E4C222FB5B200E2F45F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D32D125F2227937900108416 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		DE5FF3362C70DCDB00C2AB4F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		E3BD85D0221127F1007F6B6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3BD85DA221127F2007F6B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3BD863322112A74007F6B6D /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -444,7 +444,7 @@
 				E3BD85D9221127F2007F6B6D /* LaunchScreen.storyboard */,
 				4065F133221C2526009D179B /* Assets.xcassets */,
 				D3242E4C222FB5B200E2F45F /* Constants.swift */,
-				1D6D9D2329377F5A00FF6AEF /* Localizable.strings */,
+				DE5FF3362C70DCDB00C2AB4F /* Localizable.xcstrings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -895,7 +895,7 @@
 				};
 			};
 			buildConfigurationList = E3BD85C8221127F1007F6B6D /* Build configuration list for PBXProject "Weather" */;
-			compatibilityVersion = "Xcode 10.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -928,7 +928,6 @@
 				A47D3A5B231E35B800C7B176 /* AppViewController.storyboard in Resources */,
 				A47D3A7A231E35B800C7B176 /* Assets.xcassets in Resources */,
 				1D8A54A7290297E30058692C /* TabbarItemView.xib in Resources */,
-				1D6D9D2129377F5A00FF6AEF /* Localizable.strings in Resources */,
 				1D3DCFD128C0A12A008A73A7 /* SearchController.storyboard in Resources */,
 				A47D3A7C231E35B800C7B176 /* LaunchScreen.storyboard in Resources */,
 				1D75390B2936245E0089144A /* ActionSheetViewController.storyboard in Resources */,
@@ -936,6 +935,7 @@
 				1D22403529375C04006A2526 /* LocationView.xib in Resources */,
 				1D753912293624C80089144A /* ActionSheetActionView.xib in Resources */,
 				1D8A54AB29029BC00058692C /* TabbarViewController.storyboard in Resources */,
+				DE5FF3372C70DCDB00C2AB4F /* Localizable.xcstrings in Resources */,
 				1DCF580C293611300035E29F /* CityTVCell.xib in Resources */,
 				1DD0E98F278B629C00E3AADA /* MyTableView.xib in Resources */,
 				1D75390229361E440089144A /* DetailController.storyboard in Resources */,
@@ -1084,14 +1084,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1D6D9D2329377F5A00FF6AEF /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1D6D9D2229377F5A00FF6AEF /* en */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
 		E3BD85D9221127F2007F6B6D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1322,7 +1314,7 @@
 			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.1;
+				minimumVersion = 5.0.2;
 			};
 		};
 		1D0C74F024E2CAC800746567 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
@@ -1330,7 +1322,7 @@
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.5.0;
+				minimumVersion = 6.7.1;
 			};
 		};
 		1D3C055224DD301D00EA70D6 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
@@ -1338,7 +1330,7 @@
 			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 4.2.0;
+				minimumVersion = 4.4.3;
 			};
 		};
 		1D7299A726A556F200396ADA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
@@ -1346,15 +1338,15 @@
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 7.4.1;
+				minimumVersion = 7.11.0;
 			};
 		};
 		1D7299AC26A55DCF00396ADA /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-cocoa.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.32.3;
+				kind = exactVersion;
+				version = 10.49.0;
 			};
 		};
 		1DEEC6AC24DC38C700AD34D6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
