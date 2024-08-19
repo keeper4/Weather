@@ -48,7 +48,7 @@ class SearchViewModel: BaseViewControllerViewModel<Void>, SearchDatasource {
         let vm = [
             CityTVCellVM(cityName: "Rome"),
             CityTVCellVM(cityName: "New York"),
-            CityTVCellVM(cityName: "london"),
+            CityTVCellVM(cityName: "London"),
             CityTVCellVM(cityName: "Paris")
         ]
         

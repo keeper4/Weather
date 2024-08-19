@@ -29,20 +29,11 @@ class DatabaseManager: BaseDataManager, DatabaseAPI, BaseModelMappingContext {
 extension DatabaseManager {
     
     func save<T: MappableToRealm>(_ model: T) {
+        guard let model = model as? Object else { return }
         try? self.realm.writeOpeningTransactionIfNeeded { [weak self] in
-            guard let self = self else { return }
-            model.save(realm: self.realm)
-//            guard let self = self else { return }
-//
-//            switch model {
-//
-//            case is ResponsWeatherModel:
-//
-//                self.realm.add(model.toRealmStoredObject(),
-//                               update: ResponsWeatherStoredObject.primaryKey() != nil ? .all : .error)
-//
-//            default: fatalError("DatabaseManager save default no logic")
-//            }
+            self?.realm.writeAsync { [weak self] in
+                self?.realm.add(model, update: .all)
+            }
         }
     }
     
